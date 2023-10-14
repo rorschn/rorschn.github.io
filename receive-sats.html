@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Adding Sats to a Wallet - LebihJago.com</title>
+
+    <!-- manifest meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="assets/img/favicon180.png" sizes="180x180">
+    <link rel="icon" href="assets/img/favicon32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/img/favicon16.png" sizes="16x16" type="image/png">
+
+    <!-- Google fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- style css for this template -->
+    <link href="assets/css/style.css" rel="stylesheet" id="style">
+</head>
+
+<body class="body-scroll" data-page="receive-sats">
+
+    <!-- loader section -->
+    <div class="container-fluid loader-wrap">
+        <div class="row h-100">
+            <div class="col-10 col-md-6 col-lg-5 col-xl-3 mx-auto text-center align-self-center">
+                <div class="loader-cube-wrap loader-cube-animate mx-auto">
+                    <img src="assets/img/logo.png" alt="Logo">
+                </div>
+                <p class="mt-4">It's time for track budget<br><strong>Please wait...</strong></p>
+            </div>
+        </div>
+    </div>
+    <!-- loader section ends -->
+
+    <!-- Begin page -->
+    <main class="h-100 has-header">
+
+        <!-- Header -->
+        <header class="header position-fixed">
+            <div class="row">
+                <div class="col-auto">
+                    <button class="btn btn-light btn-44 back-btn" onclick="window.location.replace('index.html');">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+                <div class="col align-self-center text-center">
+                    <div class="logo-small">
+                        <img src="assets/img/logo.png" alt="">
+                        <h5>LebihJago.com</h5>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <a href="notifications.html" target="_self" class="btn btn-light btn-44">
+                        <i class="bi bi-bell"></i>
+                        <span class="count-indicator"></span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- Header ends -->
+
+        <!-- main page content -->
+        <div class="main-container container">
+
+            <div class="row mb-3">
+                <h3 class="title mb-3">Two options to add sats to 📱 iPhone 15 LN wallet</h3>
+            </div>
+
+            <hr class="mb-4">
+
+            <h5 class="mb-4">1. Buy with QRIS</h5>
+
+            <div class="row h-100 mb-2">
+                <div class="col-auto">
+                    <p>Buy some sats from this <a href="https://btcln.app/atm/">this ATM</a>.</p>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <a href="https://btcln.app/atm/" class="stretched-link"></a>
+                            <img src="assets/img/ayamjago/btcln.app.png" alt="" style="width:100%;"> 
+                        </div>
+                    </div>
+
+                    <p>Copy the LNRUL after the buy</p>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <img src="assets/img/ayamjago/btcln.copylnrul.png" alt="" style="width:100%;"> 
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="form-group form-floating  mb-3">
+                            <input type="text" class="form-control" value="" placeholder="" id="lnurl">
+                            <label for="lnurl">Paste the LNURL here</label>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-4">
+                        <a href="settings.html" target="_self" class="btn btn-default btn-lg w-100">Withdraw the sats you bought from this LNURL</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mb-4">
+
+            <h5 class="mb-4">2. Create an invoice (money request)</h5>
+
+            <div class="row h-100 mb-2">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="form-group form-floating  mb-3">
+                        <input type="number" class="form-control" value="" placeholder="" id="amount">
+                        <label for="amount">Amount expected (in sats)</label>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="form-group form-floating  mb-3">
+                        <input type="text" class="form-control" value="" placeholder="" id="memo">
+                        <label for="memo">Memo</label>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row h-100 ">
+                <div class="col-12 mb-4">
+                    <a href="settings.html" target="_self" class="btn btn-default btn-lg w-100">Create an invoice code to receive sats from an LN wallet</a>
+                </div>
+            </div>
+
+            <hr class="mb-4">
+
+        </div>
+        <!-- main page content ends -->
+
+    </main>
+    <!-- Page ends-->
+
+
+    <!-- Required jquery and libraries -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+
+    <!-- cookie js -->
+    <script src="assets/js/jquery.cookie.js"></script>
+
+    <!-- Customized jquery file  -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/color-scheme.js"></script>
+
+    <!-- page level custom script -->
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+
+
+</html>
